@@ -39,6 +39,8 @@ public class ScreenShakeScript : MonoBehaviour {
 			camPos = transform.position;
 		}
 		shake = amount;
+		ChromaAdjuster effect = GetComponent<ChromaAdjuster> ();
+		effect.SendMessage ("EffectOn");
 		
 	}
 }
